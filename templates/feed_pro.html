@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASH_STTRIKE // ELITE_FEED</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        :root { --gold: #ffcc00; --dark: #0a0a0a; }
+        body { background: #000; color: var(--gold); font-family: sans-serif; }
+        .nav { border-bottom: 1px solid var(--gold); padding: 10px; display: flex; align-items: center; background: var(--dark); }
+        .feed-container { max-width: 500px; margin: 20px auto; }
+        .insta-card { border: 1px solid var(--gold); background: var(--dark); margin-bottom: 20px; }
+        .card-header { padding: 10px; display: flex; align-items: center; border-bottom: 0.5px solid #333; }
+        .avatar { width: 35px; height: 35px; background: var(--gold); color: #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-right: 10px; }
+        .post-img { width: 100%; border-bottom: 1px solid var(--gold); }
+        .card-content { padding: 15px; }
+        .username { font-weight: bold; font-size: 0.9rem; }
+        .caption { font-size: 0.85rem; margin-top: 5px; color: #ccc; }
+        .terminal-box { background: #000; border: 1px dashed var(--gold); padding: 15px; margin-top: 20px; font-family: monospace; font-size: 0.8rem; }
+        #pro-log-list { list-style: none; padding: 0; margin: 0; }
+    </style>
+</head>
+<body>
+    <canvas id="matrix"></canvas>
+    
+    <nav class="nav">
+        <div class="avatar">N</div>
+        <span style="font-weight: bold; letter-spacing: 1px;">ELITE_ACCESS</span>
+    </nav>
+
+    <div class="feed-container">
+        <div class="insta-card">
+            <div class="card-header">
+                <div class="avatar">Y</div>
+                <span class="username">yugantkrovik <span style="font-size: 0.6rem; border: 1px solid var(--gold); padding: 1px 4px; margin-left: 5px;">ELITE</span></span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1000" class="post-img" alt="Target">
+            <div class="card-content">
+                <div class="username">Verification Confirmed.</div>
+                <div class="caption">System node bypassed. Session extraction successful.</div>
+                
+                <div class="terminal-box">
+                    <ul id="pro-log-list">
+                        <li>> Establish secure tunnel... [OK]</li>
+                        <li>> Packet interception... [OK]</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

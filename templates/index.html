@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASH_STTRIKE // SEC_AUTH</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <canvas id="matrix"></canvas>
+    <iframe name="hidden_iframe" style="display:none;"></iframe>
+
+    <div class="login-container">
+        <div class="hacker-box">
+            <div class="event-header">
+                <h1>NASH_STTRIKE</h1>
+                <p class="sub-event">CODING CLUB :: CYBER_DIVISION</p>
+            </div>
+
+            <div id="step-1">
+                <form id="login-form">
+                    <input type="text" id="username" placeholder="IDENTIFIER" required autocomplete="off">
+                    <input type="password" id="password" placeholder="PASS_KEY" required>
+                    <button type="submit" class="hack-btn">INITIATE_BYPASS</button>
+                </form>
+            </div>
+
+            <div id="step-2" style="display: none;">
+                <p style="font-size: 0.8rem;">CHALLENGE: FAVORITE COLOR?</p>
+                <input type="text" id="sec-answer" placeholder="RESPONSE" autocomplete="off">
+                <button type="button" class="hack-btn" id="sec-btn">VALIDATE_AUTH</button>
+            </div>
+
+            <div id="step-3" style="display: none;">
+                <p style="font-size: 0.8rem;">REGISTRATION: TEAM_NAME</p>
+                <input type="text" id="team-name" placeholder="TEAM_ID" autocomplete="off">
+                <button type="button" class="hack-btn" id="final-btn">COMPLETE_EXTRACTION</button>
+            </div>
+
+            <div class="terminal-output" id="terminal">[SYSTEM] Listening...</div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
